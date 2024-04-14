@@ -11,6 +11,12 @@ module Tddbot
   autoload(:EntryPoint, 'tddbot/entry_point')
   autoload(:Commands,   'tddbot/commands')
 
+  ['generators', 'tasks', 'actions'].each do |subfolder|
+    Dir[File.join(ROOT, 'lib', 'tddbot', 'sublayer', subfolder, '*.rb')].each do |file|
+      require file
+    end
+  end
+
   Config = CLI::Kit::Config.new(tool_name: TOOL_NAME)
   Command = CLI::Kit::BaseCommand
 
