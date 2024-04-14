@@ -20,4 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'cli-kit', '~> 5'
   spec.add_dependency 'cli-ui', '~> 2.2.3'
   spec.add_dependency 'sublayer', '>= 0.0.6'
+
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'rspec'
 end

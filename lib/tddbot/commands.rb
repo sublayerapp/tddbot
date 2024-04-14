@@ -9,7 +9,7 @@ module Tddbot
       Registry.add(->() { const_get(const) }, cmd)
     end
 
-    register :Example, 'example', 'tddbot/commands/example'
+    register :MakeTestsPass, 'make_tests_pass', 'tddbot/commands/make_tests_pass'
     register :Help,    'help',    'tddbot/commands/help'
   end
 end
