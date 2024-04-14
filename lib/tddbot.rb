@@ -1,5 +1,7 @@
 require 'cli/ui'
 require 'cli/kit'
+require "sublayer"
+require "open3"
 
 CLI::UI::StdoutRouter.enable
 
