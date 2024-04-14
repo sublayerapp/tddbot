@@ -4,7 +4,7 @@ module Tddbot
   module Commands
     class MakeTestsPass < Tddbot::Command
       def call(_args, _name)
-        Sublayer::Tasks::MakeRspecTestsPass.new(implementation_file_path: _args[0], test_command: _args[1]).run
+        Sublayer::Tasks::MakeRspecTestsPassTask.new(implementation_file_path: _args[0], test_command: _args[1]).run
       end
 
       def self.help
